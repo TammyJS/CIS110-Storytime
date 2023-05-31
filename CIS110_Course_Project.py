@@ -63,3 +63,44 @@ while keepPlaying.lower() == "yes":
     goToStore = input(f"\nShould Farmer {farmersName} go to the store?:  ")
     while goToStore.lower() != "yes" and goToStore.lower() != "no":
         goToStore = input(f"Please type yes or no:  ")
+
+    if goToStore == "yes":
+        print(f"\nHe tells {carName} the enchanted {car}, let's go to the grocery store to shop!  ")
+        print(f"After turning right, then left, then left again, they arivved at the grocery store.  ")
+        print(f"{carName} drops off farmer {farmersName} in front of the store, gives a little honk then parks itself into a parking space.  ")
+        print(f"Getting a cart, farmer {farmersName} starts his shopping.  ")
+        print(f"Not being able to see the labels to clearly, he does his best to get what he thinks his wife needs.  ")
+        print(f"When he comes out of the store, the enchanted {car} pulls up and pops open the back for farmer {farmersName} to put the groceries in.  ")
+        print(f"Customers in the parking lot stare in amazement at the car driving itself.  ")
+    else:
+        print(f"\nFarmer {farmersName} decides that maybe it's best to leave the shopping to his wife because his eyes can't see the labels to good anymore.  ")
+        print(f"The enchanted {car} and farmer {farmersName} continue to drive around town, waving at the townspeople as they drive by.  ")
+
+    #Alternate Endings
+    if iceCream == "yes" and goToStore == "yes":
+        print(f"\nWith a quick wave to the people in the parking lot, the farmer tells the enchanted {car} it's time to go home.  ")
+        print(f"With the groceries in the back, the farmer is happy and filled with life again.  ")
+        print(f"He thanks the car as it parks in front of his farmhouse.  ")
+        print(f"His wife comes running out of the door after watching through the window, her husband pulling in")
+        print(f"She stood in the doorway, looking at her husband as he got out of {carName}.  ")
+        print(f"Amazed, she stares at the {car}, thinking about the days they use to ride in it.  ")
+        print(f"He grabs the bags of food, and inside the bags, the wife sees cans of dog and cat food for pets they do not have, chili powder, {foodItem}, and jalapenos.  ")
+        print(f"The enchanted {car} gives a honk and drives back to the barn.  ")
+    elif iceCream == "no" and goToStore == "no":
+        print(f"\nWith the flowers on the seat beside him, he is excited to get home to give them to his wife.  ")
+        print(f"He tells {carName}, it's time to go home  ")
+        print(f" Driving out of town, he decides he is going to take his wife out for a drive tomorrow and the {car} gives a little honk in agreement.  ")
+        print(f"Parked outside his farmhouse, his wife comes out and looks in amazement at the old {car} and her husband.  ")
+        print(f"He gives the flowers to her and places a gentle kiss on her lips.  ")
+        print(f"The enchanted {car} gives a little honk and drives back to the barn.  ")
+    else:
+        print(f"\nWith his fill of ice cream, farmer {farmersName} decides it would be best to go home after a little drive through town.  ")
+        print(f"He rather not attract anymore attention to himself and {carName}.  ")
+        print(f"Once home, he tells his wife about the enchanted {car}, and they decide to go for a ride tomorrow, with her sitting in the drivers seat of course.  ")
+        print(f"She can see better than him!  ")
+
+        print(f"\nThe End")
+        
+        keepPlaying = input(f"\nDo you want to play again? Please enter yes or no:  ") 
+        while keepPlaying.lower() != "yes" and keepPlaying.lower() != "no":
+            keepPlaying = input(f"Please type yes or no:  ")
